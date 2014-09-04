@@ -4,7 +4,8 @@
         "configs": {
             "json()": {},
             "@inited": "true"
-        }
+        },
+        "@runner": "Apache httpd (PHP, HTML)"
     },
     "share": {
         "@preview": false,
@@ -28,7 +29,7 @@
     },
     "build": {
         "@path": "/.c9/builders",
-        "@saveall": "true",
+        "@saveall": true,
         "@builder": "auto"
     }
 }
