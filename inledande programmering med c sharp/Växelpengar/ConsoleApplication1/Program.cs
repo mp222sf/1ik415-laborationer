@@ -16,7 +16,6 @@ namespace Växelpengar
             int amount_of_cash_paid;
             double cash_back;
             string input;
-            uint total;
             double rounding_off_amount;
             int five_hundred_skr;
             int one_hundred_skr;
@@ -26,17 +25,45 @@ namespace Växelpengar
             int five_skr;
             int one_skr;
 
-            // här skriver man in de olika beloppen.
-            Console.Write("Ange totalsumma     : ");
-            input = Console.ReadLine();
-            exact_amount_to_pay = double.Parse(input);
+
+            while (true)
+            {
+                try
+                {
+                    Console.Write("Ange totalsumma     : ");
+                    exact_amount_to_pay = double.Parse(Console.ReadLine());
+                    if (exact_amount_to_pay > 2000000000)
+                    {
+                        throw new OverflowException();
+                    }
+                    break;
+
+                }
+
+
+                catch (OverflowException)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("För stor summa!");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+                catch (FormatException)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Fel format!");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+            }
+        
 
 
             // Kolla så att beloppet är större än 0.50 kr.
             if (exact_amount_to_pay < 0.50)
             {
                 Console.BackgroundColor = ConsoleColor.Red;
-                Console.WriteLine("Beloppet är mindre än 0,50 kr. Kan därför inte genomföra köpet.");
+                Console.WriteLine("Beloppet är mindre än 0,50 kr och är därför ingen giltig summa. Kan inte genomföra köpet.");
                 Console.BackgroundColor = ConsoleColor.Black;
             }
 
@@ -53,7 +80,7 @@ namespace Växelpengar
                 rounding_off_amount = cash_to_pay - exact_amount_to_pay;
                 rounding_off_amount = (double)Math.Round(rounding_off_amount, 2);
 
-                // Räkna pengar tillbaka.
+                // Räkna "pengar tillbaka".
                 cash_back = amount_of_cash_paid - cash_to_pay;
 
                 // Räkna hur mycket av varje sedel eller mynt.
@@ -89,7 +116,7 @@ namespace Växelpengar
                     Console.WriteLine("-----------------------------");
                     Console.WriteLine("");
 
-                    // Kontrollerar om sedlar/mynt är större än 1.
+                    // Kontrollerar att sedlar/mynt är större än 1.
                     if (five_hundred_skr >= 1)
                     {
                         Console.WriteLine("500-lappar          : " + five_hundred_skr);
