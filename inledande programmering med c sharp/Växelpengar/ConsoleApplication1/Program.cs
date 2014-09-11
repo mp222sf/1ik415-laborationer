@@ -69,10 +69,38 @@ namespace Växelpengar
 
             else
             {
-
+                 while (true)
+            {
+                try
+                {
                 Console.Write("Ange erhållet belopp: ");
                 input = Console.ReadLine();
                 amount_of_cash_paid = int.Parse(input);
+
+                if (amount_of_cash_paid > 2000000000)
+                {
+                    throw new OverflowException();
+                }
+                break;
+
+                }
+
+
+                catch (OverflowException)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("För stor summa!");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+                catch (FormatException)
+                {
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Fel format!");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                }
+
+            }
 
 
                 // Räkna öresavrundning.
