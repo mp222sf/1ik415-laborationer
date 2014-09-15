@@ -1,0 +1,17 @@
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Pavic\Desktop\Linnéuniversitetet Webbprogrammerare 120hp 2014\Inledande programmering med C#\Visual Studio 2013 Projects\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Växelpengar\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
