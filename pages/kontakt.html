@@ -21,6 +21,25 @@
    
             <div id="content" style="padding: 10px;background-color:#B4B4B4;width:580px;float:left;">
                 <!--Här skriver vi infomation.-->
+                <h3 id="kontakt">Kontakt</h3>
+                
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
+                    <fieldset>
+                    <legend>Fråga?</legend>
+                    Ärende: <select name="arende">
+                        <option value="arende_fraga" selected>Fråga?</option>
+                        <option value="arende_feedback">Feedback</option>
+                    </select><br>
+                    Rubrik: <input type="text" name="rubrik" /><br>
+                    Fråga:<br> <textarea rows="5" cols="30" name="fraga"></textarea></fieldset><br>
+                    <fieldset>
+                    <legend>Personlig information</legend>
+                    Namn: <input type="text" name="namn" /><br>
+                    Kontakta mig via mail <input type="checkbox" name="g1[]" value="kontakt_mail" /><br> 
+                    Kontakta mig via telefon <input type="checkbox" name="g1[]" value="kontakt_telefon" /></fieldset><br>
+                    <input type="submit" value="Skicka!" />
+                </form>
+                
             </div>
     
         </div>
