@@ -64,26 +64,33 @@ a:hover {
 }
 
 
-
+/* 
+        COINTAINER
+                        */
 #cointainer {
-    background-color:#D0D0D0;
+    background-color:white;
     color:black;
     width:1000px;
     margin: 0 auto;
     text-align:left;
-    border:1px;
-    border-color:black;
-    border-style:solid;
 }
+
+
+
+
+
+/* 
+        HEADER
+                        */
 #header {
     background-color:#0744C9;
     color:white;
     text-align:left;
     height:150px;
     padding:10px;
-    border-bottom:1px;
-    border-color:black;
-    border-style:solid;
+    margin: 20px 0px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+    border: 0px solid #616161;
 }
 #header h1 {
    font-size:72px; 
@@ -92,12 +99,26 @@ a:hover {
    font-size:20px; 
 }
 
-#navigation {
-    line-height:30px;
-    background-color:#D0D0D0;
-    width:230px;
+#navigation_content {
+
+    background-color:#0744C9;
+    width:1000px;
+    height:100%;
     float:left;
-    padding:10px;
+    
+
+
+}
+/* 
+        NAVIGATION
+                        */
+#navigation           {
+    line-height:30px;
+    background-color:#0744C9;
+    width:230px;
+    height:100%;
+    float:left;
+    padding:0px;
 }
 #navigation h4 {
     font-size:32px; 
@@ -106,17 +127,74 @@ a:hover {
 }
 #navigation ul {
     list-style-type: square;
-    margin-left:30px;
+    margin-left:0px;
     font-size:12px;
 }
+
+
+#navigation li {
+list-style: none;
+margin: 0px 0 0px 0;
+} 
+#navigation li a {
+display: block;
+width: 230px;
+margin: 0;
+padding: 0px 0px 0px 10px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:#042875;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #042875;
+
+}
+#meny_lista li a {
+display: block;
+width: 230px;
+margin: 0;
+padding: 0px 0px 0px 20px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:#4173DD;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #4173DD;
+
+}
+#navigation li a:hover {
+cursor: pointer; 
+background:#0744C9;
+color: white;
+}
+#navigation a:link, #navigation a:visited { 
+color: rgba(255,255,255,1);
+text-decoration: none;
+}
+#navigation a:active { 
+color: rgba(250,191,12,1);
+}
+#navigation a#current {
+background: white;
+color:black;
+}
+
+
+
+
+
+/* 
+        CONTENT
+                        */
 #content {
-    width:728px;
-    background-color:white;    
+    width:750px;
+    height:100%;    
+    background-color:#E0E0D1;    
     float:left;
     padding:10px;
-    border-left:1px;
-    border-color:black;
-    border-style:solid;
+
 }
 #content h3 {
    font-size:32px;
@@ -132,13 +210,18 @@ a:hover {
     margin-bottom:10px;
     margin-top:10px;
 }
+
+
+
+
+/* 
+        FOOTER
+                        */
 #footer {
     background-color:#616161;
     color:white;
     clear:both;
     text-align:center;
     padding:10px;
-    border-top:1px;
-    border-color:black;
-    border-style:solid;
+    margin: 0px 0px 10px 0px;
 }
