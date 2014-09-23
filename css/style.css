@@ -49,11 +49,11 @@ table {
 
 
 a:link { 
-    color:black;
+    color:#0E77BE;
     text-decoration: none;
 }
 a:visited { 
-    color:black;
+    color:#0E77BE;
     text-decoration: none;
     
 }
@@ -120,10 +120,10 @@ a:hover {
     float:left;
     padding:0px;
 }
-#navigation h4 {
-    font-size:32px; 
-    margin-bottom:10px;
-    margin-top:10px;
+#navigation h3 {
+   font-size:32px;
+   margin-bottom:10px;
+   margin-top:10px;
 }
 #navigation ul {
     list-style-type: square;
@@ -196,6 +196,32 @@ color:black;
     padding:10px;
 
 }
+#content p {
+
+   margin-bottom:5px;
+   margin-top:0px;
+}
+#content strong {
+   margin-top: 20px;    
+   font-weight:bold;
+    
+    
+}
+#content dt {
+   margin-top: 10px;    
+
+    
+    
+}
+#content li {
+   margin-top: 10px;    
+}
+#content li li {
+   margin-top: 0px;    
+
+    
+    
+}
 #content h3 {
    font-size:32px;
    margin-bottom:10px;
@@ -203,7 +229,7 @@ color:black;
 }
 #content h4 {
    font-size:24px;    
-   margin-bottom:10px;
+   margin-bottom:5px;
    margin-top:25px;
 }
 #big_buck_bunny {
