@@ -84,6 +84,9 @@ a:hover {
                         */
 #header {
     background-color:#0744C9;
+    background-image: url('https://1ik415-laborationer-c9-mp222sf.c9.io/pics/jag_logotype.png');
+    background-size: contain;
+    background-repeat: no-repeat;
     color:white;
     text-align:left;
     height:150px;
@@ -93,10 +96,12 @@ a:hover {
     border: 0px solid #616161;
 }
 #header h1 {
-   font-size:72px; 
+   font-size:72px;
+   text-align: right;
 }
 #header h3 {
-   font-size:20px; 
+   font-size:32px; 
+   text-align: right;
 }
 
 #navigation_content {
@@ -124,6 +129,7 @@ a:hover {
    font-size:32px;
    margin-bottom:10px;
    margin-top:10px;
+   margin-left:10px;
 }
 #navigation ul {
     list-style-type: square;
@@ -231,6 +237,15 @@ color:black;
    font-size:24px;    
    margin-bottom:5px;
    margin-top:25px;
+}
+#content h4.blogg {
+   background-image: url('https://1ik415-laborationer-c9-mp222sf.c9.io/pics/jag_logotype.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   font-size:24px;    
+   margin-bottom:5px;
+   margin-top:25px;
+   padding-left:45px;
 }
 #big_buck_bunny {
     margin-bottom:10px;
