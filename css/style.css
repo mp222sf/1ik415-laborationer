@@ -128,7 +128,7 @@ a:hover {
 #navigation h3 {
    font-size:32px;
    margin-bottom:10px;
-   margin-top:10px;
+   margin-top:20px;
    margin-left:10px;
 }
 #navigation ul {
@@ -237,6 +237,7 @@ color:black;
    font-size:24px;    
    margin-bottom:5px;
    margin-top:25px;
+   border-bottom: 1px solid #1E1E1E;
 }
 #content h4.blogg {
    background-image: url('https://1ik415-laborationer-c9-mp222sf.c9.io/pics/jag_logotype.png');
@@ -247,6 +248,39 @@ color:black;
    margin-top:25px;
    padding-left:45px;
 }
+
+#content fieldset {
+    border:1px solid black;
+    padding: 5px;
+    
+    
+}
+
+#content legend {
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  color:black;
+  font-size:90%;
+  text-align:left;
+  }
+  
+#content thead {
+   font-weight:bold;
+   padding: 5px;
+   margin-top: 20px
+   margin-bottom: 20px;
+}
+
+#content th {
+    padding-top: 5px;
+   padding-bottom: 5px;
+}
+#content tfoot td {
+   padding-top: 5px;
+}
+
+  
 #big_buck_bunny {
     margin-bottom:10px;
     margin-top:10px;
@@ -265,4 +299,5 @@ color:black;
     text-align:center;
     padding:10px;
     margin: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;    
 }
