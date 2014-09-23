@@ -252,6 +252,10 @@ color:black;
    margin-top:25px;
    padding-left:45px;
 }
+#content p.bloggnamn {
+font-style: italic;
+text-align: right;
+}
 
 #content fieldset {
     border:1px solid black;
@@ -284,6 +288,10 @@ color:black;
    padding-top: 5px;
 }
 
+
+/* 
+        MEDIA
+                        */
   
 #big_buck_bunny {
     margin-bottom:10px;
@@ -293,6 +301,18 @@ color:black;
     width: 150px;
     border-radius: 100px 100px 100px 100px;
 
+}
+#london2013 {
+    width: 200px;
+    padding-right: 10px;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
 }
 
 
