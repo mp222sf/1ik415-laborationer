@@ -12,69 +12,108 @@ namespace Labb_1._3___GL
         {
             int count = 0;
 
-
             for (int col = 0; col <= 1 && col >= 0; col++)
             {
-                try
+
+                for (int col2 = 0; col2 <= 1 && col2 >= 0; col2++)
                 {
-                    count = ReadInt("Ange antal löner att mata in: ");
-                    if (count > 2000000000)
+                    try
                     {
-                        throw new OverflowException();
+                        count = ReadInt("Ange antal löner att mata in: ");
+                        if (count > 2000000000)
+                        {
+                            throw new OverflowException();
+                        }
+                        if (count <= 0)
+                        {
+                            throw new ArgumentNullException();
+                        }
+                        if (count == 1)
+                        {
+                            throw new ArgumentException();
+                        }
+                        col2++;
+                        ProcessSalaries(count);
                     }
-                    if (count <= 0)
+                    catch (OverflowException)
                     {
-                        throw new ArgumentNullException();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Fel! Talet du angivit är större än 2000000000.");
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        col2--;
                     }
-                    if (count == 1)
+
+                    catch (FormatException)
                     {
-                        throw new ArgumentException();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Fel format! Det du angivit är inte ett heltal.");
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        col2--;
                     }
-                    col++;
+
+                    catch (ArgumentNullException)
+                    {
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Fel! Talet du har angivit är ett för litet tal (0 och negativa tal).");
+                        Console.BackgroundColor = ConsoleColor.Black;
+                        col2--;
+                    }
+                    catch (ArgumentException)
+                    {
+
+                        Console.WriteLine();
+                        Console.BackgroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Fel! Du angav endast 1 lön. Minimum är 2.");
+                        Console.BackgroundColor = ConsoleColor.DarkGreen;
+                        Console.WriteLine();
+                        Console.WriteLine("Tryck tagent för att fortsätta - ESC avslutar");
+                        Console.BackgroundColor = ConsoleColor.Black;
+
+                        ConsoleKeyInfo inläsning_konsol_knapp;
+
+                        inläsning_konsol_knapp = Console.ReadKey();
+                        Console.WriteLine();
+
+
+
+
+                        if (inläsning_konsol_knapp.Key != ConsoleKey.Escape)
+                        {
+
+                        }
+                        else
+                        {
+                            break;
+                        }
+
+                        col2--;
+
+
+
+                    }
                 }
-                catch (OverflowException)
+
+                Console.BackgroundColor = ConsoleColor.DarkGreen;
+                Console.WriteLine();
+                Console.WriteLine("Tryck tagent för att fortsätta - ESC avslutar");
+                Console.BackgroundColor = ConsoleColor.Black;
+
+               
+                ConsoleKeyInfo inläsning_konsol_knapp2;
+
+                inläsning_konsol_knapp2 = Console.ReadKey();
+                Console.WriteLine();
+
+                if (inläsning_konsol_knapp2.Key != ConsoleKey.Escape)
                 {
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Fel summa! Tal större än 2000000000.");
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    col--;
-                }
 
-                catch (FormatException)
+                }
+                else
                 {
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Fel format!");
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    col--;
+                    break;
                 }
 
-                catch (ArgumentNullException)
-                {
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Fel summa! 0 eller ett negativt tal!");
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    col--;
-                }
-                catch (ArgumentException)
-                {
-                    
-
-                    Console.BackgroundColor = ConsoleColor.Red;
-                    Console.WriteLine("Talet är 1????");
-                    Console.BackgroundColor = ConsoleColor.Black;
-                    Console.WriteLine("Tryck tagent för att fortsätta - ESC avslutar");
-
-
-                    
-                    col--;
-
-                }
-            }
-
-
-
-            ProcessSalaries(count);
-            
+            }  
 
         }
 
@@ -83,9 +122,7 @@ namespace Labb_1._3___GL
 
             // Deklarera variablar.
             int löner_värde;
-            double löner_median_jämnt;
-            int löner_median_udda;
-            double löner_median_udda_double;
+            double löner_median;
 
             // Skapa arrayer
             int[] löner = new int[count];
@@ -148,30 +185,23 @@ namespace Labb_1._3___GL
             // Räknar median, medelvärde och lönespridning.
             if (Is_Even(löner.Length))
             {
-                löner_median_jämnt = (löner[löner.Length / 2 - 1] + löner[(löner.Length / 2)]);
-                Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner_median_jämnt / 2));
+                löner_median = löner[löner.Length / 2 - 1] + löner[(löner.Length / 2)];
+                löner_median = Convert.ToDouble(löner_median / 2);
+                löner_median = Math.Round(löner_median);
+                Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner_median));
             }
             else
             {
 
-                if (count <= 1)
-                {
-                    löner_median_udda = Convert.ToInt32(löner.Length / 2 + 0.5);
-                    Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner[löner_median_udda]));
-                }
-                else
-                {
-                    löner_median_udda_double = löner.Length / 2;
-                    löner_median_udda = Convert.ToInt32(löner_median_udda_double);
-                    Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner[löner_median_udda]));
-                }
-
+                löner_median = löner.Length / 2;
+                Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", löner[Convert.ToInt32(löner_median)]);
+                
             }
 
 
 
 
-            Console.WriteLine(String.Format("{0,-27} {1} {2,10} kr", "Medellön", ":", Convert.ToInt32(löner.Average())));
+            Console.WriteLine("{0,-27} {1} {2,10} kr", "Medellön", ":", Convert.ToInt32(löner.Average()));
             Console.WriteLine("{0,-27} {1} {2,10} kr", "Lönespridning", ":", Convert.ToInt32(löner[löner.Length - 1] - löner[0]));
 
             Console.WriteLine("--------------------------------------------");

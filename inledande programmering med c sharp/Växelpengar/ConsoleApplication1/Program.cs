@@ -115,7 +115,7 @@ namespace Växelpengar
                 five_hundred_skr = (int)cash_back / 500;
                 one_hundred_skr = (int)cash_back % 500 / 100;
                 fifty_skr = (int)cash_back % 500 % 100 / 50;
-                twenty_skr = (int)(cash_back % 500 % 100 % 50) / 20;
+                twenty_skr = (int)cash_back % 500 % 100 % 50 / 20;
                 ten_skr = (int)(cash_back % 500 % 100 % 50 % 20) / 10;
                 five_skr = (int)(cash_back % 500 % 100 % 50 % 20 % 10) / 5;
                 one_skr = (int)(cash_back % 500 % 100 % 50 % 20 % 10 % 5) / 1;
@@ -135,49 +135,49 @@ namespace Växelpengar
                     // Skriver ut kvittot.
                     Console.WriteLine("");
                     Console.WriteLine("KVITTO");
-                    Console.WriteLine("-----------------------------");
-                    Console.WriteLine("Totalt              : {0} kr", exact_amount_to_pay);
-                    Console.WriteLine("Öresavrundning      : {0} kr", rounding_off_amount);
-                    Console.WriteLine("Att betala          : {0} kr", cash_to_pay);
-                    Console.WriteLine("Kontant             : {0} kr", amount_of_cash_paid);
-                    Console.WriteLine("Tillbaka            : {0} kr", cash_back);
-                    Console.WriteLine("-----------------------------");
+                    Console.WriteLine("---------------------------------");
+                    Console.WriteLine("{0,-19} {1} {2,11}", "Totalt", ":", exact_amount_to_pay + " kr");
+                    Console.WriteLine("{0,-19} {1} {2,11}", "Öresavrundning", ":", rounding_off_amount + " kr");
+                    Console.WriteLine("{0,-19} {1} {2,11}", "Att betala", ":", cash_to_pay + " kr");
+                    Console.WriteLine("{0,-19} {1} {2,11}", "Kontant", ":", amount_of_cash_paid + " kr");
+                    Console.WriteLine("{0,-19} {1} {2,11}", "Tillbaka", ":", cash_back + " kr");
+                    Console.WriteLine("---------------------------------");
                     Console.WriteLine("");
 
                     // Kontrollerar att sedlar/mynt är större än 1.
                     if (five_hundred_skr >= 1)
                     {
-                        Console.WriteLine("500-lappar          : " + five_hundred_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "500-lappar", ":", (int)cash_back / 500);
                     }
 
                     if (one_hundred_skr >= 1)
                     {
-                        Console.WriteLine("100-lappar          : " + one_hundred_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "100-lappar", ":", (int)cash_back % 500 / 100);
                     }
 
                     if (fifty_skr >= 1)
                     {
-                        Console.WriteLine("50-lappar           : " + fifty_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "50-lappar", ":", (int)cash_back % 500 % 100 / 50);
                     }
 
                     if (twenty_skr >= 1)
                     {
-                        Console.WriteLine("20-lappar           : " + twenty_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "20-lappar", ":", (int)cash_back % 500 % 100 % 50 / 20);
                     }
 
                     if (ten_skr >= 1)
                     {
-                        Console.WriteLine("10-kronor           : " + ten_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "10-kronor", ":", (int)cash_back % 500 % 100 % 50 % 20 / 10);
                     }
 
                     if (five_skr >= 1)
                     {
-                        Console.WriteLine("5-kronor            : " + five_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "5-kronor", ":", (int)cash_back % 500 % 100 % 50 % 20 % 10 / 5);
                     }
 
                     if (one_skr >= 1)
                     {
-                        Console.WriteLine("1-kronor            : " + one_skr);
+                        Console.WriteLine("{0,-19} {1} {2}", "1-kronor", ":", (int)cash_back % 500 % 100 % 50 % 20 % 10 % 5 / 1);
                     }
                 }
             }
