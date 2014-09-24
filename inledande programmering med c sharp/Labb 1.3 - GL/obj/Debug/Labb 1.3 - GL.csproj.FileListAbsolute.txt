@@ -4,3 +4,9 @@ C:\Users\Pavic\Documents\Visual Studio 2013\Projects\ConsoleApplication1\Console
 C:\Users\Pavic\Documents\Visual Studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.csprojResolveAssemblyReference.cache
 C:\Users\Pavic\Documents\Visual Studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.exe
 C:\Users\Pavic\Documents\Visual Studio 2013\Projects\ConsoleApplication1\ConsoleApplication1\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.pdb
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\bin\Debug\Labb 1.3 - GL.exe.config
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.exe
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.pdb
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\bin\Debug\Labb 1.3 - GL.exe
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\bin\Debug\Labb 1.3 - GL.pdb
+P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Labb 1.3 - GL\obj\Debug\Labb 1.3 - GL.csprojResolveAssemblyReference.cache

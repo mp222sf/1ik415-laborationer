@@ -26,6 +26,10 @@ namespace Labb_1._3___GL
                     {
                         throw new ArgumentNullException();
                     }
+                    if (count == 1)
+                    {
+                        throw new ArgumentException();
+                    }
                     col++;
                 }
                 catch (OverflowException)
@@ -51,6 +55,20 @@ namespace Labb_1._3___GL
                     Console.BackgroundColor = ConsoleColor.Black;
                     col--;
                 }
+                catch (ArgumentException)
+                {
+                    
+
+                    Console.BackgroundColor = ConsoleColor.Red;
+                    Console.WriteLine("Talet är 1????");
+                    Console.BackgroundColor = ConsoleColor.Black;
+                    Console.WriteLine("Tryck tagent för att fortsätta - ESC avslutar");
+
+
+                    
+                    col--;
+
+                }
             }
 
 
@@ -60,7 +78,7 @@ namespace Labb_1._3___GL
 
         }
 
-        static void ProcessSalaries(int count)
+        private static void ProcessSalaries(int count)
         {
 
             // Deklarera variablar.
@@ -89,6 +107,7 @@ namespace Labb_1._3___GL
                     {
                         throw new ArgumentNullException();
                     }
+                   
                     löner[col] = löner_värde;
                     löner_kopia[col] = löner_värde;
                     
@@ -116,6 +135,7 @@ namespace Labb_1._3___GL
                     Console.BackgroundColor = ConsoleColor.Black;
                     col--;
                 }
+              
             }
 
             Console.WriteLine();
@@ -129,7 +149,7 @@ namespace Labb_1._3___GL
             if (Is_Even(löner.Length))
             {
                 löner_median_jämnt = (löner[löner.Length / 2 - 1] + löner[(löner.Length / 2)]);
-                Console.WriteLine("Medianlön                   : {0} kr", Convert.ToInt32(löner_median_jämnt / 2));
+                Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner_median_jämnt / 2));
             }
             else
             {
@@ -137,13 +157,13 @@ namespace Labb_1._3___GL
                 if (count <= 1)
                 {
                     löner_median_udda = Convert.ToInt32(löner.Length / 2 + 0.5);
-                    Console.WriteLine("Medianlön                   : {0} kr", Convert.ToInt32(löner[löner_median_udda]));
+                    Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner[löner_median_udda]));
                 }
                 else
                 {
                     löner_median_udda_double = löner.Length / 2;
                     löner_median_udda = Convert.ToInt32(löner_median_udda_double);
-                    Console.WriteLine("Medianlön                   : {0} kr", Convert.ToInt32(löner[löner_median_udda]));
+                    Console.WriteLine("{0,-27} {1} {2,10} kr", "Medianlön", ":", Convert.ToInt32(löner[löner_median_udda]));
                 }
 
             }
@@ -152,7 +172,7 @@ namespace Labb_1._3___GL
 
 
             Console.WriteLine(String.Format("{0,-27} {1} {2,10} kr", "Medellön", ":", Convert.ToInt32(löner.Average())));
-            Console.WriteLine("Lönespridning               : {0} kr", Convert.ToInt32(löner[löner.Length - 1] - löner[0]));
+            Console.WriteLine("{0,-27} {1} {2,10} kr", "Lönespridning", ":", Convert.ToInt32(löner[löner.Length - 1] - löner[0]));
 
             Console.WriteLine("--------------------------------------------");
 
@@ -171,7 +191,7 @@ namespace Labb_1._3___GL
 
         }
 
-        static int ReadInt(string prompt)
+        private static int ReadInt(string prompt)
         {
 
             string input;
@@ -185,7 +205,7 @@ namespace Labb_1._3___GL
 
         }
 
-        public static bool Is_Even(int value)
+        private static bool Is_Even(int value)
         {
             return value % 2 == 0;
         }
