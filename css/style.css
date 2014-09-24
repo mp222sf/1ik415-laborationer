@@ -59,9 +59,18 @@ a:visited {
 }
 
 a:hover { 
-    color:black;
+    color:#0744C9;
     text-decoration: underline;
 }
+a:focus { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+a:active { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+
 
 
 /* 
@@ -73,6 +82,7 @@ a:hover {
     width:1000px;
     margin: 0 auto;
     text-align:left;
+    font-size: 16px;
     
 }
 
@@ -177,18 +187,26 @@ border: 1px solid #616161;
 background: #4173DD;
 
 }
+
+#navigation a:active { 
+background: white;
+color:black;
+}
+#navigation a:focus {
+background:#0744C9;    
+color: white;
+}
 #navigation li a:hover {
 cursor: pointer; 
 background:#0744C9;
 color: white;
 }
 #navigation a:link, #navigation a:visited { 
-color: rgba(255,255,255,1);
+color: white;
 text-decoration: none;
 }
-#navigation a:active { 
-color: rgba(250,191,12,1);
-}
+
+
 #navigation a#current {
 background: white;
 color:black;
@@ -316,6 +334,9 @@ text-align: right;
 #resultat_tabell klar {
     color: green;
 }
+#resultat_tabell ejklar {
+    color: #7B7B7B;
+}
 
 
 
@@ -343,6 +364,10 @@ text-align: right;
 
 .left {
     float: left;
+}
+
+#content p.form {
+    
 }
 
 

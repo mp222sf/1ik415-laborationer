@@ -23,23 +23,25 @@
             </div>
             <div id="content">
                 <!--Här skriver vi infomation.-->
-                <h3 id="kontakt">Kontakt</h3>
                 
                 <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
                     <fieldset>
                     <legend>Fråga?</legend>
-                    Ärende: <select name="arende">
+                    <p class="form"><label for="arande">Ärende:</label> <select id="arande" name="arende">
                         <option value="arende_fraga" selected>Fråga?</option>
                         <option value="arende_feedback">Feedback</option>
-                    </select><br>
-                    Rubrik: <input type="text" name="rubrik" /><br>
-                    Fråga:<br> <textarea rows="5" cols="30" name="fraga"></textarea></fieldset><br>
+                    </select></p>
+                    <label for="rubrik">Rubrik:</label>
+                    <p class="form"><input type="text" id="rubrik" name="rubrik" /></p>
+                    <label for="fraga">Fråga:</label>
+                    <p class="form"><textarea id="fraga" rows="5" cols="30" name="fraga"></textarea></p></fieldset>
                     <fieldset>
                     <legend>Personlig information</legend>
-                    Namn: <input type="text" name="namn" /><br>
-                    Kontakta mig via mail <input type="checkbox" name="via-mail" value="kontakt_mail" /><br> 
-                    Kontakta mig via telefon <input type="checkbox" name="via-telefon" value="kontakt_telefon" /></fieldset><br>
-                    <input type="submit" value="Skicka!" />
+                    <p class="form"><label for="namn">Namn: </label><input id="namn" type="text" name="namn" /></p>
+                    <p class="form"><label for="via-mail">Kontakta mig via mail </label><input id="via-mail" type="checkbox" name="via-mail" value="kontakt_mail" /> </p>
+                    <p class="form"><label for="via-telefon">Kontakta mig via telefon </label><input id="via-telefon" type="checkbox" name="via-telefon" value="kontakt_telefon" /></p></fieldset>
+                    <p class="form"></p>
+                    <p class="form"><input type="submit" value="Skicka!" /></p>
                 </form>
             </div>
             </div>
