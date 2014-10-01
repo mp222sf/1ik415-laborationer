@@ -110,11 +110,13 @@ a:active {
   
 }
 #header h1 {
+    font-family: "Franklin Gothic Medium";
    font-size:72px;
    text-align: right;
    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
 }
 #header h3 {
+    font-family: "Franklin Gothic Medium";
    font-size:32px; 
    text-align: right;
    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
@@ -146,6 +148,7 @@ a:active {
     color:white;    
 }
 #navigation h3 {
+    font-family: "Franklin Gothic Medium";
    font-size:32px;
    margin-bottom:10px;
    margin-top:20px;
@@ -308,12 +311,14 @@ color: black;
     background-color:#E0E0D1;    
     float:left;
     padding:10px;
+    
 
 }
 #content p {
 
    margin-bottom:5px;
    margin-top:0px;
+   line-height: 140%; 
 }
 #content strong {
    margin-top: 20px;    
@@ -346,11 +351,13 @@ color: black;
     
 }
 #content h3 {
+    font-family: "Franklin Gothic Medium";
    font-size:32px;
    margin-bottom:10px;
    margin-top:10px;
 }
 #content h4 {
+    font-family: "Franklin Gothic Medium";
    font-size:24px;    
    margin-bottom:5px;
    margin-top:25px;
