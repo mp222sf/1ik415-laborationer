@@ -91,9 +91,9 @@ a:active {
 
 
 
-/* 
+/* ------------------
         HEADER
-                        */
+   ------------------ */
 #header {
     background-color:#0744C9;
     background-image: url('../pics/jag_logotype.png');
@@ -120,19 +120,22 @@ a:active {
    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
 }
 
+
+/* ------------------
+    NAVIGATION-CONTENT
+   ------------------ */
 #navigation_content {
 
     background-color:#0744C9;
     width:1000px;
     height:100%;
     float:left;
-    
-
-
 }
-/* 
-        NAVIGATION
-                        */
+
+
+/* ------------------
+    NAVIGATION
+   ------------------ */
 #navigation           {
     line-height:30px;
     background-color:#0744C9;
@@ -159,12 +162,13 @@ a:active {
 #navigation li {
 list-style: none;
 margin: 0px 0 0px 0;
+
 } 
 #navigation li a {
 display: block;
-width: 230px;
-margin: 0;
-padding: 0px 0px 0px 10px;
+width: 195px;
+margin-left: 0px;
+padding: 0px 0px 0px 35px;
 text-align: left;
 font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
 font-size: 12px;
@@ -173,11 +177,12 @@ border-radius: 0px;
 border: 1px solid #616161;
 background: #042875;
 
+
 }
 #meny_lista li a {
 display: block;
 width: 230px;
-margin: 0;
+margin-left: 0px;
 padding: 0px 0px 0px 20px;
 text-align: left;
 font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
@@ -208,18 +213,95 @@ text-decoration: none;
 }
 
 
-#navigation a#current {
+#navigation a#meny_hem {
+background-image: url('pics/sprite.png');
+background-position: 5px -45px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_hem {
+background-image: url('pics/sprite.png');
+background-position: 5px 3px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_hem {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px 3px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_kontakt {
+background-image: url('pics/sprite.png');
+background-position: 5px -332px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_kontakt {
+background-image: url('pics/sprite.png');
+background-position: 5px -284px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_kontakt {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -284px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_laborationer {
+background-image: url('pics/sprite.png');
+background-position: 5px -140px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_laborationer {
+background-image: url('pics/sprite.png');
+background-position: 5px -92px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_laborationer {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -92px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_presentation {
+background-image: url('pics/sprite.png');
+background-position: 5px -236px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_presentation {
+background-image: url('pics/sprite.png');
+background-position: 5px -188px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_presentation {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -188px;
+background-repeat: no-repeat;
+cursor: pointer; 
+
+}
+
+#navigation a.current {
 background: white;
-color:black;
+color: black;
 }
 
 
 
 
 
-/* 
+/* ------------------
         CONTENT
-                        */
+   ------------------ */
 #content {
     width:750px;
     height:100%;    
@@ -288,6 +370,10 @@ font-style: italic;
 text-align: right;
 }
 
+#content p.form {
+    
+}
+
 #content fieldset {
     border:1px solid #616161;
     padding: 5px;
@@ -348,9 +434,9 @@ text-align: right;
 }
 
 
-/* 
+/* ------------------
         MEDIA
-                        */
+   ------------------ */
   
 #big_buck_bunny {
     margin-bottom:10px;
@@ -368,6 +454,11 @@ text-align: right;
     padding: 10px;
 }
 
+
+
+/* ------------------
+        CLASSES
+   ------------------ */
 .right {
     float: right;
 }
@@ -376,16 +467,14 @@ text-align: right;
     float: left;
 }
 
-#content p.form {
-    
-}
 
 
 
 
-/* 
+
+/* ------------------
         FOOTER
-                        */
+   ------------------ */
 #footer {
     background-color:#616161;
     color:white;
