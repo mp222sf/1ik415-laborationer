@@ -1,6 +1,0 @@
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-P:\GitHub\1ik415-laborationer\inledande programmering med c sharp\Rita med asterisker\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
