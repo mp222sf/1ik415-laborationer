@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a:link { 
+    color:#0E77BE;
+    text-decoration: none;
+}
+a:visited { 
+    color:#0E77BE;
+    text-decoration: none;
+    
+}
+
+a:hover { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+a:focus { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+a:active { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+
+
+
+/* 
+        COINTAINER
+                        */
+#cointainer {
+    background-color:white;
+    color:black;
+    width:1000px;
+    margin: 0 auto;
+    text-align:left;
+    font-size: 14px;
+    font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+    
+}
+
+
+
+
+
+/* ------------------
+        HEADER
+   ------------------ */
+#header {
+    background-color:#0744C9;
+    background-image: url('../pics/jag_logotype.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align:left;
+    height:150px;
+    padding:10px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+
+    border-bottom: 5px double white;      
+  
+}
+#header h1 {
+    font-family: "Franklin Gothic Medium";
+   font-size:72px;
+   text-align: right;
+   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+#header h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px; 
+   text-align: right;
+   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+/* ------------------
+    NAVIGATION-CONTENT
+   ------------------ */
+#navigation_content {
+
+    background-color:#0744C9;
+    width:1000px;
+    height:100%;
+    float:left;
+}
+
+
+/* ------------------
+    NAVIGATION
+   ------------------ */
+#navigation           {
+    line-height:30px;
+    background-color:#0744C9;
+    width:230px;
+    height:100%;
+    float:left;
+    padding:0px;
+    color:white;    
+}
+#navigation h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px;
+   margin-bottom:10px;
+   margin-top:20px;
+   margin-left:10px;
+   
+}
+#navigation ul {
+    list-style-type: square;
+    margin-left:0px;
+    font-size:12px;
+}
+
+
+#navigation li {
+list-style: none;
+margin: 0px 0 0px 0;
+
+} 
+#navigation li a {
+display: block;
+width: 195px;
+margin-left: 0px;
+padding: 0px 0px 0px 35px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:#042875;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #042875;
+
+
+}
+#meny_lista li a {
+display: block;
+width: 230px;
+margin-left: 0px;
+padding: 0px 0px 0px 20px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:#4173DD;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #4173DD;
+
+}
+
+#navigation a:active { 
+background: white;
+color:black;
+}
+#navigation a:focus {
+background:#0744C9;    
+color: white;
+}
+#navigation li a:hover {
+cursor: pointer; 
+background:#0744C9;
+color: white;
+}
+#navigation a:link, #navigation a:visited { 
+color: white;
+text-decoration: none;
+}
+
+
+#navigation a#meny_hem {
+background-image: url('pics/sprite.png');
+background-position: 5px -45px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_hem {
+background-image: url('pics/sprite.png');
+background-position: 5px 3px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_hem {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px 3px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_kontakt {
+background-image: url('pics/sprite.png');
+background-position: 5px -332px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_kontakt {
+background-image: url('pics/sprite.png');
+background-position: 5px -284px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_kontakt {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -284px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_laborationer {
+background-image: url('pics/sprite.png');
+background-position: 5px -140px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_laborationer {
+background-image: url('pics/sprite.png');
+background-position: 5px -92px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_laborationer {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -92px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+#navigation a#meny_presentation {
+background-image: url('pics/sprite.png');
+background-position: 5px -236px;
+background-repeat: no-repeat;
+}
+#navigation a:hover#meny_presentation {
+background-image: url('pics/sprite.png');
+background-position: 5px -188px;
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+#navigation a:focus#meny_presentation {
+background:#0744C9; 
+background-image: url('pics/sprite.png');
+background-position: 5px -188px;
+background-repeat: no-repeat;
+cursor: pointer; 
+
+}
+
+#navigation a.current {
+background: white;
+color: black;
+}
+
+
+
+
+
+/* ------------------
+        CONTENT
+   ------------------ */
+#content {
+    width:750px;
+    height:100%;    
+    background-color:#E0E0D1;    
+    float:left;
+    padding:10px;
+    
+
+}
+#content p {
+
+   margin-bottom:5px;
+   margin-top:0px;
+   line-height: 140%; 
+}
+#content strong {
+   margin-top: 20px;    
+   font-size:20px; 
+   font-family: "Franklin Gothic Medium";
+  
+    
+    
+}
+#content dt {
+   margin-top: 10px;   
+   
+
+    
+    
+}
+#content dd {
+    margin-left: 20px;
+}
+#content ul.little_list {
+    list-style-type: square;
+    margin-left: 30px;
+}
+#content li {
+   margin-top: 10px;    
+}
+#content li li {
+   margin-top: 0px;    
+
+    
+    
+}
+#content h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px;
+   margin-bottom:10px;
+   margin-top:10px;
+}
+#content h4 {
+    font-family: "Franklin Gothic Medium";
+   font-size:24px;    
+   margin-bottom:5px;
+   margin-top:25px;
+   border-bottom: 1px solid #1E1E1E;
+}
+#content h4.blogg {
+   background-image: url('https://1ik415-laborationer-c9-mp222sf.c9.io/pics/jag_logotype.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   font-size:24px;    
+   margin-bottom:5px;
+   margin-top:25px;
+   padding-left:45px;
+}
+#content p.bloggnamn {
+font-style: italic;
+text-align: right;
+}
+
+#content p.form {
+    
+}
+
+#content fieldset {
+    border:1px solid #616161;
+    padding: 5px;
+    background-color: #9bb4e9;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Arial";
+    
+    
+}
+
+#content legend {
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  color:white;
+  font-size:90%;
+  text-align:left;
+  background-color: #042875;
+}
+#content textarea {
+    font-family: "Arial";
+}
+
+
+#resultat_tabell thead {
+   font-weight:bold;
+   padding: 3px;
+   margin-top: 20px
+   margin-bottom: 20px;
+   border: 1px solid black;
+}
+#resultat_tabell th {
+    padding-top: 5px;
+    padding-left: 3px;
+   padding-bottom: 5px;
+   background: #0744C9;
+   text-align: center;
+   
+}
+#resultat_tabell tbody td {
+   padding: 3px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+#resultat_tabell tfoot td {
+   padding: 3px;
+   border: 1px solid black;
+   background: #0744C9;   
+}
+#resultat_tabell tr:nth-child(even) {background: #fff}
+#resultat_tabell tr:nth-child(odd) {background: #9bb4e9}
+#resultat_tabell klar {
+    color: green;
+}
+#resultat_tabell ejklar {
+    color: #7B7B7B;
+}
+
+
+/* ------------------
+        MEDIA
+   ------------------ */
+  
+#big_buck_bunny {
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+
+#jag_presentation {
+    width: 150px;
+    border-radius: 30px 30px 30px 30px;
+
+}
+#london2013 {
+    width: 200px;
+    padding: 10px;
+}
+
+
+
+/* ------------------
+        CLASSES
+   ------------------ */
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+
+
+
+
+
+/* ------------------
+        FOOTER
+   ------------------ */
+#footer {
+    background-color:#616161;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;   
+    border-top: 5px double white;   
+}
+
+.clear{
+    clear:both;
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="sv">
+    <head>
+        <meta charset="utf-8" />
+        <title>Mattias Pavic</title>
+        <link rel="stylesheet" href="../css/style.css" media="screen" /> 
+        <link rel="stylesheet" href="../css/print.css" media="print" />     
+    </head>
+    <body>
+        <div id="cointainer">
+            <div id="header">
+                  <h1>Mattias Pavic</h1>  
+                <h3>Kontakt</h3>
+            </div>
+            <div id="navigation_content">
+            <div id="navigation">
+                <h3>Meny</h3>
+                    <ul id="meny">
+                    <li><a id="meny_hem" href="../index.html">Hem</a></li>
+                     <li><a class="current" id="meny_kontakt" href="kontakt.html">Kontakt</a></li>
+                     <li><a id="meny_laborationer" href="laborationer.html">Laborationer</a></li>
+                     <li><a id="meny_presentation" href="presentation.html">Presentation</a></li>
+                    </ul>
+            </div>
+            <div id="content">
+                <!--Här skriver vi infomation.-->
+                
+                <form action="http://voyager.lnu.se/tekinet/kurser/dtt/wp_webbintro/form.php" method="POST">
+                    <fieldset>
+                    <legend>Fråga?</legend>
+                    <p class="form"><label for="arande">Ärende:</label> <select id="arande" name="arende">
+                        <option value="arende_fraga" selected>Fråga?</option>
+                        <option value="arende_feedback">Feedback</option>
+                    </select></p>
+                    <label for="rubrik">Rubrik:</label>
+                    <p class="form"><input type="text" id="rubrik" name="rubrik" /></p>
+                    <label for="fraga">Fråga:</label>
+                    <p class="form"><textarea id="fraga" rows="5" cols="30" name="fraga"></textarea></p></fieldset>
+                    <fieldset>
+                    <legend>Personlig information</legend>
+                    <p class="form"><label for="namn">Namn: </label><input id="namn" type="text" name="namn" /></p>
+                    <p class="form"><label for="via-mail">Kontakta mig via mail </label><input id="via-mail" type="checkbox" name="via-mail" value="kontakt_mail" /> </p>
+                    <p class="form"><label for="via-telefon">Kontakta mig via telefon </label><input id="via-telefon" type="checkbox" name="via-telefon" value="kontakt_telefon" /></p></fieldset>
+                    <p class="form"></p>
+                    <p class="form"><input type="submit" value="Skicka!" /></p>
+                </form>
+            </div>
+            </div>
+            <div id="footer">
+            © Mattias Pavic - Webbprogrammerare - Linnéuniversitetet
+            </div>
+
+        </div>
+
+
+
+
+    </body>
+</html>
