@@ -446,6 +446,11 @@ text-align: right;
     width: 25%;
     padding: 10px;
 }
+#screenshot-mobile {
+    width: 15%;
+    margin: 10px;
+    border: 1px solid black;
+}
 
 
 

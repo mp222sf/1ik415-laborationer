@@ -222,6 +222,14 @@ img {
     margin-right: auto;
 }
 
+#screenshot-mobile {
+    width: 97%;
+    margin-left: auto;
+    margin-right: auto;    
+    float: left;
+    display: block;
+    border: 1px solid black;
+}
 
 
 
