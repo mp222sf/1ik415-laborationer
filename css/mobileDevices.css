@@ -1,0 +1,247 @@
+/* ------------------
+    CONTAINER
+   ------------------ */
+
+#cointainer {
+    background-color:white;
+    width:100%;
+    text-align:left;
+    
+}
+
+
+
+
+/* ------------------
+    HEADER
+   ------------------ */
+
+#header {
+    width: 100%;
+    background-size: 60%;
+    height:200px;
+    padding: 0px;
+    position: relative;
+}
+#header h1 {
+    font-size:48px;
+    text-align: right;
+    position: absolute; bottom: 30px; left: 5px;
+}
+#header h3 {
+    font-size:28px; 
+    text-align: right;
+    position: absolute; bottom: 5px; left: 5px;
+}
+
+
+/* ------------------
+    NAVIGATION-CONTENT
+   ------------------ */
+
+#navigation_content {
+    width: 100%;
+    padding: 0px;
+}
+
+/* ------------------
+    NAVIGATION
+   ------------------ */
+
+#navigation           {
+    width: 100%;
+    display: block;
+    padding: 0px;
+    border-bottom: 5px double white; 
+}
+#navigation h3 {
+    display: none;
+    margin-bottom:0px;
+    margin-top:0px;
+    margin-left:0px;
+}
+#navigation ul {
+}
+#navigation li a {
+    width: 100%;
+    font-size: 14px;
+    padding: 0px 0px 0px 0px;
+    border: 0px solid #616161;
+    border-top: 1px solid #616161;
+    border-bottom: 1px solid #616161;
+    text-indent: 35px;
+}
+#navigation a {
+    margin: 0px 0px 0px 35px;
+}
+#navigation li a:focus {
+}
+#navigation li a:hover {
+}
+#navigation a:link, #navigation a:visited { 
+}
+
+
+/* ------------------
+   NAVIGATION #MENY_LISTA
+   ------------------ */
+
+#navigation #meny_lista li a {
+display: block;
+width: 100%;
+padding: 0px;
+border: 0px solid #616161;
+border-top: 1px solid #616161;
+border-bottom: 1px solid #616161;
+text-indent: 20px;
+}
+#navigation #meny_lista li a:focus {
+}
+#navigation #meny_lista li a:hover {
+
+}
+#navigation #meny_lista a:link, #navigation #meny_lista a:visited { 
+}
+
+
+
+
+/* ------------------
+    CONTENT
+   ------------------ */
+   
+#content {
+    width:100%;
+    height:100%;    
+    background-color:#E0E0D1;
+    padding: 0px;
+    
+
+}
+#content p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#content h3 {
+    font-size:28px;
+    padding: 5px;
+}
+#content h4 {
+    font-size:20px;  
+    padding: 5px;
+}
+#content h4.blogg {
+    font-size:20px;    
+    padding-left:55px;
+}
+#content p.bloggnamn {
+}
+
+#content p.form {
+}
+
+#content fieldset {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+#content legend {
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#content dt {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#content dd {
+    margin-left: 25px;
+}
+
+#content ol li, #content ul li{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#resultat_div {
+    overflow: auto;
+}
+
+#resultat_tabell {
+    max-width: 100%;
+    white-space: nowrap;
+}
+#resultat_tabell thead {
+}
+#resultat_tabell th {
+}
+#resultat_tabell tbody td {
+}
+#resultat_tabell tfoot td {
+}
+#resultat_tabell klar {
+}
+#resultat_tabell ejklar {
+}
+#resultat_tabell table {
+    white-space: nowrap;
+    margin: 4px;
+
+}
+
+
+
+/* ------------------
+    CONTENT SPECIAL
+   ------------------ */
+
+
+#big_buck_bunny {
+    width: 90%;
+    margin-left: 15px;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+}
+#london2013 {
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;    
+    float: left;
+}
+#jag_presentation {
+    display: block;
+    float: none;
+    position: center;
+    width: 70%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+
+
+
+/* ------------------
+    FOOTER
+   ------------------ */
+
+#footer {
+    background-color:#616161;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;   
+    border-top: 5px double white;   
+}
+
+
+
+
