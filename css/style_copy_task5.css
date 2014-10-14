@@ -1,0 +1,495 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+a:link { 
+    color:#0E77BE;
+    text-decoration: none;
+}
+a:visited { 
+    color:#0E77BE;
+    text-decoration: none;
+    
+}
+
+a:hover { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+a:focus { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+a:active { 
+    color:#0744C9;
+    text-decoration: underline;
+}
+
+
+
+/* 
+        COINTAINER
+                        */
+#container {
+    background-color:white;
+    color:black;
+    width:1000px;
+    margin: 0 auto;
+    text-align:left;
+    font-size: 14px;
+    font-family: "Arial", "Lucida Grande", "Lucida Sans Unicode", Helvetica, sans-serif;
+    
+}
+
+
+
+
+
+/* ------------------
+        HEADER
+   ------------------ */
+#header {
+    background-color:#0744C9;
+    background-image: url('../pics/jag_logotype.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color:white;
+    text-align:left;
+    height:150px;
+    padding:10px;
+    margin: 20px 0px 0px 0px;
+    border-radius: 30px 30px 0px 0px;
+
+    border-bottom: 5px double white;      
+  
+}
+#header h1 {
+    font-family: "Franklin Gothic Medium";
+   font-size:72px;
+   text-align: right;
+   text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+}
+#header h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px; 
+   text-align: right;
+   text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+
+/* ------------------
+    NAVIGATION-CONTENT
+   ------------------ */
+#navigation_content {
+
+    background-color:#0744C9;
+    height:100%;
+    float:left;
+}
+
+
+/* ------------------
+    NAVIGATION
+   ------------------ */
+nav           {
+    line-height:30px;
+    background-color:#0744C9;
+    width:230px;
+    height:100%;
+    float:left;
+    padding:0px;
+    color:white;    
+}
+nav h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px;
+   margin-bottom:10px;
+   margin-top:20px;
+   margin-left:10px;
+   
+}
+nav ul {
+    list-style-type: none;
+    margin-left:0px;
+    font-size:12px;
+}
+
+
+
+nav li a {
+display: block;
+width: 195px;
+margin-left: 0px;
+padding: 0px 0px 0px 35px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:#042875;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #042875;
+background-image: url('pics/sprite.png');
+background-repeat: no-repeat;
+cursor: pointer; 
+
+
+}
+
+
+nav li a:focus {
+background:#0744C9;    
+color: white;
+background-image: url('pics/sprite.png');
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+nav li a:hover {
+cursor: pointer; 
+background:#0744C9;
+color: white;
+background-image: url('pics/sprite.png');
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+nav a:link, nav a:visited { 
+color: white;
+text-decoration: none;
+}
+
+
+nav li a#meny_hem {
+background-position: 5px -45px;
+}
+nav li a:hover#meny_hem {
+background-position: 5px 3px;
+}
+nav li a:focus#meny_hem {
+background-position: 5px 3px;
+}
+
+nav li a#meny_kontakt {
+background-position: 5px -332px;
+}
+nav li a:hover#meny_kontakt {
+background-position: 5px -284px;
+}
+nav li a:focus#meny_kontakt {
+background-position: 5px -284px;
+}
+
+nav li a#meny_laborationer {
+background-position: 5px -140px;
+}
+nav li a:hover#meny_laborationer {
+background-position: 5px -92px;
+}
+nav li a:focus#meny_laborationer {
+background-position: 5px -92px;
+}
+
+nav li a#meny_presentation {
+background-position: 5px -236px;
+}
+nav li a:hover#meny_presentation {
+background-position: 5px -188px;
+}
+nav li a:focus#meny_presentation {
+background-position: 5px -188px;
+}
+
+nav li a.current {
+background: white;
+color: black;
+background-image: url('pics/sprite.png');
+background-repeat: no-repeat;
+cursor: pointer; 
+}
+
+/* ------------------
+   MENY Lista i lista
+   ------------------ */
+
+
+
+nav #meny_lista li a {
+display: block;
+width: 230px;
+margin-left: 0px;
+padding: 0px 0px 0px 20px;
+text-align: left;
+font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, sans-serif;
+font-size: 12px;
+color:white;
+border-radius: 0px;
+border: 1px solid #616161;
+background: #4173DD;
+background-image: none;
+}
+nav #meny_lista li a:focus {
+background:#0744C9;    
+color: white;
+cursor: pointer; 
+}
+nav #meny_lista li a:hover {
+background:#0744C9;
+color: white;
+cursor: pointer; 
+}
+nav #meny_lista a:link, nav #meny_lista a:visited { 
+color: white;
+text-decoration: none;
+}
+
+
+/* ------------------
+        CONTENT
+   ------------------ */
+main {
+    width:750px;
+    height:100%;    
+    background-color:#E0E0D1;    
+    float:left;
+    padding:10px;
+    
+
+}
+main p {
+
+   margin-bottom:5px;
+   margin-top:0px;
+   line-height: 140%; 
+}
+main strong {
+   margin-top: 20px;    
+   font-size:20px; 
+   font-family: "Franklin Gothic Medium";
+  
+    
+    
+}
+main dt {
+   margin-top: 10px;   
+   
+
+    
+    
+}
+main dd {
+    margin-left: 20px;
+}
+main ul.little_list {
+    list-style-type: square;
+    margin-left: 30px;
+}
+main li {
+   margin-top: 10px;    
+}
+main li li {
+   margin-top: 0px;    
+
+    
+    
+}
+main h3 {
+    font-family: "Franklin Gothic Medium";
+   font-size:32px;
+   margin-bottom:10px;
+   margin-top:20px;
+}
+main h4 {
+    font-family: "Franklin Gothic Medium";
+   font-size:24px;    
+   margin-bottom:5px;
+   margin-top:25px;
+   border-bottom: 1px solid #1E1E1E;
+}
+main h5 {
+    font-family: "Franklin Gothic Medium";
+   font-size:18px;    
+   margin-bottom:5px;
+   margin-top:25px;
+}
+main h4.blogg {
+   background-image: url('https://1ik415-laborationer-c9-mp222sf.c9.io/pics/jag_logotype.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   font-size:24px;    
+   margin-bottom:5px;
+   margin-top:25px;
+   padding-left:45px;
+}
+main p.bloggnamn {
+font-style: italic;
+text-align: right;
+}
+
+main p.form {
+    
+}
+
+main fieldset {
+    border:1px solid #616161;
+    padding: 5px;
+    background-color: #9bb4e9;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Arial";
+    
+    
+}
+
+main legend {
+    padding: 3px;
+    margin-left: 5px;
+    margin-right: 5px;
+  color:white;
+  font-size:90%;
+  text-align:left;
+  background-color: #042875;
+}
+main textarea {
+    font-family: "Arial";
+}
+
+
+#resultat_tabell thead {
+   font-weight:bold;
+   padding: 3px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   border: 1px solid black;
+}
+#resultat_tabell th {
+    padding-top: 5px;
+    padding-left: 3px;
+   padding-bottom: 5px;
+   background: #0744C9;
+   text-align: center;
+   
+}
+#resultat_tabell tbody td {
+   padding: 3px;
+   border-left: 1px solid black;
+   border-right: 1px solid black;
+}
+#resultat_tabell tfoot td {
+   padding: 3px;
+   border: 1px solid black;
+   background: #0744C9;   
+}
+#resultat_tabell tr:nth-child(even) {background: #fff}
+#resultat_tabell tr:nth-child(odd) {background: #9bb4e9}
+#resultat_tabell klar {
+    color: green;
+}
+#resultat_tabell ejklar {
+    color: #7B7B7B;
+}
+
+
+/* ------------------
+        MEDIA
+   ------------------ */
+  
+#big_buck_bunny {
+    margin-bottom:10px;
+    margin-top:10px;
+}
+
+
+#jag_presentation {
+    width: 20%;
+    border-radius: 30px 30px 30px 30px;
+
+}
+#london2013 {
+    width: 25%;
+    padding: 10px;
+}
+#screenshot-mobile {
+    width: 15%;
+    margin: 10px;
+    border: 1px solid black;
+}
+
+
+
+/* ------------------
+        CLASSES
+   ------------------ */
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+
+
+
+
+
+/* ------------------
+        FOOTER
+   ------------------ */
+#footer {
+    background-color:#616161;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;   
+    border-top: 5px double white;   
+}
+
+.clear{
+    clear:both;
+}

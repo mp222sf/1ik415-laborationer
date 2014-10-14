@@ -190,6 +190,17 @@ text-indent: 20px;
 
 }
 
+#content select {
+    display: block;
+}
+#content input {
+    padding: 15px;
+    width: 90%;
+}
+#content textarea {
+    padding: 15px;
+    width: 90%;
+}
 
 
 /* ------------------
