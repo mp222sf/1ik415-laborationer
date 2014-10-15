@@ -52,6 +52,7 @@ q:before, q:after {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 50px;
 
     
 }
@@ -66,7 +67,8 @@ q:before, q:after {
     vertical-align: text-top;
     margin-left: auto;
     margin-right: auto;
-    
+    z-index: -1;
+    position: relative;
 }
 
 #gallery a {
@@ -82,7 +84,9 @@ q:before, q:after {
     -webkit-transform 2s;  /* For Safari 3.1 to 6.0 */
     transition: width 2s, height 2s, transform 1s;
     transform: rotate(5deg);
-        text-align: center;
+    text-align: center;
+    z-index: -1;
+    position: relative;
 
 }
 
@@ -91,12 +95,12 @@ q:before, q:after {
     color: black;
     content: attr(title);
     font-family: ALUSO;
-    font-size: 14px;
+    font-size: 12px;
     text-decoration: none;
 }
 
 #gallery a:link, #gallery a:visited { 
-text-decoration: none;
+    text-decoration: none;
 }
 
 #gallery a:nth-child(3n+3) {
@@ -107,8 +111,11 @@ text-decoration: none;
 }
 
 #gallery a:hover {
+    position: relative;
     transform: rotate(0deg);
     transform: scale(1.3);
+    z-index: 10;
+    box-shadow: 10px 10px 20px black;
 }
 
 
