@@ -74,7 +74,7 @@ a:active {
 
 
 /* 
-        COINTAINER
+        CONTAINER
                         */
 #cointainer {
     background-color:white;
@@ -425,6 +425,9 @@ text-align: right;
 #resultat_tabell ejklar {
     color: #7B7B7B;
 }
+#hcard-Mattias-Pavic {
+    line-height: 150%;
+}
 
 
 /* ------------------
@@ -464,6 +467,15 @@ text-align: right;
 .left {
     float: left;
 }
+.italic {
+    font-style: italic;
+}
+.smaller-font-size {
+    font-size: 75%;
+}
+.space {
+    height: 20px;
+}
 
 
 
@@ -487,3 +499,6 @@ text-align: right;
 .clear{
     clear:both;
 }
+
+
+

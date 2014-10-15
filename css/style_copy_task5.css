@@ -493,3 +493,19 @@ main textarea {
 .clear{
     clear:both;
 }
+
+footer#end {
+    background-color:#616161;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:10px;
+    margin: 0px 0px 10px 0px;
+    border-radius: 0px 0px 10px 10px;   
+    border-top: 5px double white;   
+}
+
+figcaption {
+    font-size: 10px;
+    font-style: italic;
+}
