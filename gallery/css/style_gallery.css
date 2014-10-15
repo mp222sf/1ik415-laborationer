@@ -58,10 +58,14 @@ q:before, q:after {
 
 
 #gallery img {
+    display: block;
     width: 150px;
     top: 20;
-    left: 0;
+    left: auto;
+    right: auto;
     vertical-align: text-top;
+    margin-left: auto;
+    margin-right: auto;
     
 }
 
@@ -70,6 +74,7 @@ q:before, q:after {
     padding: 10px;
     background: white;
     position: relative;
+    border: 1px solid black;
     float: left;
     margin: 3px;
     box-shadow: 10px 10px 5px black;
@@ -77,6 +82,20 @@ q:before, q:after {
     -webkit-transform 2s;  /* For Safari 3.1 to 6.0 */
     transition: width 2s, height 2s, transform 2s;
     transform: rotate(5deg);
+
+}
+
+#gallery a:after {
+    display: inline;
+    text-align: center;
+    color: black;
+    content: attr(title);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+#gallery a:link, #gallery a:visited { 
+text-decoration: none;
 }
 
 #gallery a:nth-child(3n+3) {
@@ -89,6 +108,8 @@ q:before, q:after {
 #gallery a:hover {
 
 }
+
+
 
 
 
