@@ -59,7 +59,7 @@ q:before, q:after {
 
 #gallery img {
     display: block;
-    width: 150px;
+    width: 200px;
     top: 20;
     left: auto;
     right: auto;
@@ -80,7 +80,7 @@ q:before, q:after {
     box-shadow: 5px 5px 7px black;
     -webkit-transition: width 2s, height 2s,
     -webkit-transform 2s;  /* For Safari 3.1 to 6.0 */
-    transition: width 2s, height 2s, transform 2s;
+    transition: width 2s, height 2s, transform 1s;
     transform: rotate(5deg);
         text-align: center;
 
@@ -90,6 +90,7 @@ q:before, q:after {
     display: inline;
     color: black;
     content: attr(title);
+    font-family: ALUSO;
     font-size: 14px;
     text-decoration: none;
 }
@@ -112,7 +113,10 @@ text-decoration: none;
 
 
 
-
+@font-face {
+    font-family: aluso;
+    src: url(../ALUSO.TTF);
+}
 
 
 
