@@ -53,10 +53,8 @@ q:before, q:after {
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-
-    
+    margin-bottom: 50px;
 }
-
 
 #gallery img {
     display: block;
@@ -85,7 +83,6 @@ q:before, q:after {
     transform: rotate(5deg);
     text-align: center;
     z-index: 0;
-
 }
 
 #gallery a:after {
