@@ -59,11 +59,35 @@ q:before, q:after {
 
 #gallery img {
     width: 150px;
-    position: relative;
     top: 20;
     left: 0;
     vertical-align: text-top;
     
+}
+
+#gallery a {
+    display: inline;
+    padding: 10px;
+    background: white;
+    position: relative;
+    float: left;
+    margin: 3px;
+    box-shadow: 10px 10px 5px black;
+    -webkit-transition: width 2s, height 2s,
+    -webkit-transform 2s;  /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 2s, transform 2s;
+    transform: rotate(5deg);
+}
+
+#gallery a:nth-child(3n+3) {
+    transform: rotate(-5deg);
+}
+#gallery a:nth-child(5) {
+    transform: rotate(10deg);
+}
+
+#gallery a:hover {
+
 }
 
 
